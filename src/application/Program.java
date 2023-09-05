@@ -36,6 +36,12 @@ public class Program {
 		sd.insert(sellerNovo);
 		System.out.println("Inserted new Id = " + sellerNovo.getId());
 
+		System.out.println("\n=== TEST 5: seller update ===");
+		seller = sd.findById(1);
+		seller.setName("Martha Wayne");
+		sd.update(seller);
+		System.out.println("Update Complete");
+
 	}
 
 }
