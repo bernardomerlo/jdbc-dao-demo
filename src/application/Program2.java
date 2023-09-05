@@ -20,6 +20,19 @@ public class Program2 {
 		dd.update(department);
 		System.out.println(department);
 		
+		System.out.println("\n=== TEST 3: department delete ===");
+		Department dpTeste = new Department(null, "Teste");
+		dd.insert(dpTeste);
+		System.out.println(dpTeste);
+		dd.deleteById(dpTeste.getId());
+		
+		System.out.println("\n=== TEST 4: department findById ===");
+		Department dep = dd.findById(8);
+		System.out.println(dep);
+		
+		
+		
+		
 	}
 
 }
